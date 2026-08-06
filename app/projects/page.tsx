@@ -6,6 +6,7 @@ import { demoProjects, type Project } from '@/lib/demo-data';
 
 export default function ProjectsPage() {
   const [projects, setProjects] = useState<Project[]>(demoProjects);
+const [showAddModal, setShowAddModal] = useState(false);
 
   useEffect(() => {
     fetch('/api/projects')
@@ -21,9 +22,16 @@ export default function ProjectsPage() {
             <p className="text-sm uppercase tracking-[0.3em] text-brand-200">Projects</p>
             <h1 className="mt-2 text-3xl font-semibold text-white">Construction project portfolio</h1>
           </div>
-          <button className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-2 font-semibold text-white">
-            <Plus size={16} /> Add Project
-          </button>
+          <button
+  onClick={() => setShowAddModal(true)}
+  className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-2 font-semibold text-white"
+>
+  <Plus size={16} />
+  Add Project
+</button>
+  <Plus size={16} />
+  Add Project
+</button>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -45,6 +53,53 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
-    </main>
-  );
-}
+
+</div>
+
+{showAddModal && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+    <div className="w-full max-w-md rounded-3xl border border-white/10 bg-slate-900 p-6">
+      <h2 className="text-2xl font-bold text-white">
+        Add New Project
+      </h2>
+
+      <input
+        type="text"
+        placeholder="Project Name"
+        className="mt-4 w-full rounded-xl bg-slate-800 p-3 text-white"
+      />
+
+      <input
+        type="text"
+        placeholder="Client Name"
+        className="mt-3 w-full rounded-xl bg-slate-800 p-3 text-white"
+      />
+
+      <input
+        type="text"
+        placeholder="Budget"
+        className="mt-3 w-full rounded-xl bg-slate-800 p-3 text-white"
+      />
+
+      <div className="mt-6 flex justify-end gap-3">
+        <button
+          onClick={() => setShowAddModal(false)}
+          className="rounded-xl bg-gray-600 px-4 py-2 text-white"
+        >
+          Cancel
+        </button>
+
+        <button
+          className="rounded-xl bg-brand-500 px-4 py-2 text-white"
+        >
+          Save Project
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
+</div>
+</main>
+  
+
