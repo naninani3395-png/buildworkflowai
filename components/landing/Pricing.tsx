@@ -2,6 +2,7 @@
 
 import { ArrowUpRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/Button';
 
 const plans = [
   {
@@ -64,9 +65,9 @@ export function Pricing() {
                 </li>
               ))}
             </ul>
-            <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-500 px-5 py-3 font-semibold text-white transition hover:bg-brand-600">
+            <Button className="mt-8" variant="primary">
               Choose plan <ArrowUpRight size={16} />
-            </button>
+            </Button>
           </motion.div>
         ))}
       </div>

@@ -1,7 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
-import { Building2 } from 'lucide-react';
+import { LinkButton } from '@/components/ui/Button';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -18,10 +19,10 @@ export function Navbar() {
   return (
     <nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 rounded-full border border-white/10 bg-slate-900/80 px-6 py-4 shadow-soft backdrop-blur transition">
       <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-white">
-        <span className="rounded-full bg-brand-500/20 p-2 text-brand-500">
-          <Building2 size={18} />
-        </span>
-        BuildFlow AI
+        <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white/5">
+          <Image src="/space-design-logo.svg" alt="Space Design Logo" fill className="object-contain p-2" />
+        </div>
+        Space Design
       </Link>
 
       <div className="hidden items-center gap-5 text-sm text-slate-300 md:flex">
@@ -33,12 +34,12 @@ export function Navbar() {
       </div>
 
       <div className="flex items-center gap-3">
-        <Link href="/auth/login" className="rounded-full border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-500/40 hover:text-white">
+        <LinkButton href="/auth/login" variant="secondary">
           Sign In
-        </Link>
-        <Link href="/auth/signup" className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600">
+        </LinkButton>
+        <LinkButton href="/auth/signup">
           Get Started
-        </Link>
+        </LinkButton>
       </div>
     </nav>
   );

@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
-import { ArrowRight, BarChart3, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, BarChart3, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { LinkButton } from '@/components/ui/Button';
 
 const logos = ['ACME', 'Jupiter', 'Stratus', 'Horizon'];
 
@@ -33,12 +33,10 @@ export function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <Link href="/auth/signup" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-6 py-3 font-semibold text-white shadow-lg shadow-brand-500/20 transition hover:bg-brand-600">
-              Get Started <ArrowRight size={18} />
-            </Link>
-            <Link href="#features" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-brand-500/40 hover:bg-white/10">
+            <LinkButton href="/auth/signup">Get Started <ArrowRight size={18} /></LinkButton>
+            <LinkButton href="#features" variant="secondary">
               Explore Features
-            </Link>
+            </LinkButton>
           </div>
 
           <div className="grid gap-4 rounded-3xl border border-white/10 bg-slate-950/70 p-6 sm:grid-cols-3">
