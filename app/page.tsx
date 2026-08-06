@@ -3,6 +3,7 @@
 import { Navbar } from '@/components/landing/Navbar';
 import { Hero } from '@/components/landing/Hero';
 import { Solutions } from '@/components/landing/Solutions';
+import { Workflow } from '@/components/landing/Workflow';
 import { AISection } from '@/components/landing/AISection';
 import { Features } from '@/components/landing/Features';
 import { Pricing } from '@/components/landing/Pricing';
@@ -19,6 +20,7 @@ export default function HomePage() {
 
       <Hero />
       <Solutions />
+      <Workflow />
       <AISection />
       <Features />
       <Pricing />

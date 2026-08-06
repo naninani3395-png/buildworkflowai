@@ -33,10 +33,10 @@ export function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <Link href="/auth/signup" className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-5 py-3 font-semibold text-white transition hover:bg-brand-600">
+            <Link href="/auth/signup" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-6 py-3 font-semibold text-white shadow-lg shadow-brand-500/20 transition hover:bg-brand-600">
               Get Started <ArrowRight size={18} />
             </Link>
-            <Link href="#features" className="rounded-full border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-brand-500/40 hover:text-white">
+            <Link href="#features" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-brand-500/40 hover:bg-white/10">
               Explore Features
             </Link>
           </div>
