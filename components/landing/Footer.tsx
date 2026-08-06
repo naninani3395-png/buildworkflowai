@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 
 const footerLinks = [
@@ -15,9 +14,6 @@ export function Footer() {
       <div className="grid gap-10 border-t border-white/10 pt-10 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="space-y-4">
           <div className="flex items-center gap-3 text-white">
-            <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white/5">
-              <Image src="/logo.png" alt="Space Design logo" fill className="object-contain" />
-            </div>
             <span className="text-lg font-semibold">Space Design</span>
           </div>
           <p className="max-w-xl text-sm leading-7 text-slate-400">

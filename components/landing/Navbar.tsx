@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { LinkButton } from '@/components/ui/Button';
 
@@ -18,9 +17,6 @@ export function Navbar() {
   return (
     <nav className="mx-auto flex flex-wrap items-center justify-between gap-4 rounded-full border border-white/10 bg-slate-900/80 px-6 py-4 shadow-soft backdrop-blur transition">
       <Link href="/" className="inline-flex items-center gap-3 text-sm font-semibold text-white">
-        <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white/10 p-1">
-          <Image src="/logo.png" alt="Space Design logo" width={36} height={36} className="object-contain" />
-        </div>
         <span>Space Design</span>
       </Link>
 
