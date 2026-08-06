@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const faqs = [
-  { question: 'What is BuildFlow AI?', answer: 'BuildFlow AI is an AI-driven construction ERP that centralizes project planning, procurement, attendance, and reporting in one platform.' },
+  { question: 'What is Space Design?', answer: 'Space Design is an AI-driven construction ERP that centralizes project planning, procurement, attendance, and reporting in one platform.' },
   { question: 'How secure is my project data?', answer: 'We protect data with modern encryption, role-based access control, and strict permission policies for every project and team.' },
   { question: 'Can my team collaborate across sites?', answer: 'Yes. Teams can share updates, documents, and issue-level communications across all active jobs and sites.' },
   { question: 'Does AI use my data?', answer: 'AI insights are generated from your project data only and are not used for external training without your permission.' },

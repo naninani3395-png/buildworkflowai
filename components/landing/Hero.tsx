@@ -70,7 +70,7 @@ export function Hero() {
           <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-brand-500 via-slate-500 to-slate-900" />
           <div className="relative grid gap-4 rounded-[1.75rem] bg-slate-900/95 p-6">
             <div className="flex items-center justify-between text-sm text-slate-400">
-              <span className="font-medium text-white">BuildFlow Dashboard</span>
+              <span className="font-medium text-white">Space Design Dashboard</span>
               <span className="inline-flex items-center gap-2 rounded-full bg-slate-800/80 px-3 py-1 text-xs text-slate-300">
                 <BarChart3 size={16} /> Live metrics
               </span>

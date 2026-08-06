@@ -35,7 +35,7 @@ export function Workflow() {
           The full construction workflow, stepped and simplified.
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-300">
-          BuildFlow AI guides teams from planning to completion with a clear process, fewer bottlenecks, and better outcomes.
+          Space Design guides teams from planning to completion with a clear process, fewer bottlenecks, and better outcomes.
         </p>
       </div>
 

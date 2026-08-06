@@ -41,7 +41,7 @@ export default function RoadmapPage() {
       <div className="mx-auto max-w-6xl space-y-8">
         <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-10 shadow-soft">
           <p className="text-sm uppercase tracking-[0.35em] text-brand-200">Roadmap</p>
-          <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">BuildFlow AI product roadmap</h1>
+          <h1 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">Space Design product roadmap</h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300">
             A clean product roadmap focused on construction operations, procurement, AI insights, and enterprise readiness.
           </p>

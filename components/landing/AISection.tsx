@@ -23,7 +23,7 @@ export function AISection() {
             Ask questions in plain language. Get construction-ready plans.
           </h2>
           <p className="max-w-xl text-lg leading-8 text-slate-300">
-            BuildFlow AI turns project data into immediate decisions. Drill into delays, staffing, budgets, and supplier risk without opening reports.
+            Space Design turns project data into immediate decisions. Drill into delays, staffing, budgets, and supplier risk without opening reports.
           </p>
 
           <div className="grid gap-4 rounded-3xl border border-white/10 bg-slate-900/70 p-6 text-slate-300">

@@ -54,7 +54,7 @@ export default function DashboardPage() {
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-brand-200">Operations Dashboard</p>
             <h1 className="mt-2 text-3xl font-semibold text-white">{greeting}</h1>
-            <p className="mt-2 text-sm text-slate-400">Your BuildFlow AI workspace for projects, finance, and operations.</p>
+            <p className="mt-2 text-sm text-slate-400">Your Space Design workspace for projects, finance, and operations.</p>
           </div>
           <div className="rounded-full border border-white/10 bg-slate-900/80 px-4 py-2 text-sm text-slate-300">
             Signed in as {user?.email}
@@ -117,7 +117,7 @@ export default function DashboardPage() {
           <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-6">
             <div className="mb-4 flex items-center justify-between">
               <div>
-                <p className="text-sm text-slate-400">BuildFlow AI Assistant</p>
+                <p className="text-sm text-slate-400">Space Design Assistant</p>
                 <h2 className="text-xl font-semibold text-white">Dashboard intelligence</h2>
               </div>
               <div className="rounded-full bg-brand-500/10 p-2 text-brand-300">

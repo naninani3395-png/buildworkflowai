@@ -29,7 +29,7 @@ export function Features() {
           </h2>
         </div>
         <p className="text-sm leading-7 text-slate-300">
-          From field operations to executive analytics, BuildFlow AI centralizes workflows so teams stay aligned, compliant, and ahead of risk.
+          From field operations to executive analytics, Space Design centralizes workflows so teams stay aligned, compliant, and ahead of risk.
         </p>
       </div>
 

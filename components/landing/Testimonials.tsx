@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    quote: 'BuildFlow AI helped our team cut manual reporting by 70% and keep everyone aligned on critical project milestones.',
+    quote: 'Space Design helped our team cut manual reporting by 70% and keep everyone aligned on critical project milestones.',
     name: 'Alicia M.',
     role: 'Senior Project Manager',
   },
