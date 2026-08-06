@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Building2, Globe, Sparkles } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -16,7 +16,7 @@ const navItems = [
 
 export function Navbar() {
   return (
-    <nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 rounded-full border border-white/10 bg-slate-900/80 px-5 py-4 shadow-soft backdrop-blur transition">
+    <nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 rounded-full border border-white/10 bg-slate-900/80 px-6 py-4 shadow-soft backdrop-blur transition">
       <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-white">
         <span className="rounded-full bg-brand-500/20 p-2 text-brand-500">
           <Building2 size={18} />
@@ -36,7 +36,7 @@ export function Navbar() {
         <Link href="/auth/login" className="rounded-full border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-500/40 hover:text-white">
           Sign In
         </Link>
-        <Link href="/auth/signup" className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-600">
+        <Link href="/auth/signup" className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600">
           Get Started
         </Link>
       </div>

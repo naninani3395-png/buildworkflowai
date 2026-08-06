@@ -43,7 +43,7 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.35 }}
-              className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-soft"
+              className="rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand-500/30"
             >
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/10 text-brand-300">
                 <Icon size={22} />

@@ -46,7 +46,7 @@ export function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.35 }}
-            className={`rounded-[2rem] border p-6 text-slate-300 shadow-soft ${plan.featured ? 'border-brand-500/30 bg-gradient-to-br from-brand-500/10 to-slate-900' : 'border-white/10 bg-slate-900/70'}`}
+            className={`rounded-[2rem] border p-6 text-slate-300 shadow-soft transition hover:-translate-y-1 ${plan.featured ? 'border-brand-500/30 bg-gradient-to-br from-brand-500/10 to-slate-900' : 'border-white/10 bg-slate-900/70'}`}
           >
             <div className="mb-6 flex items-center justify-between gap-3">
               <span className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">{plan.name}</span>

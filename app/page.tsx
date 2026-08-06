@@ -2,6 +2,7 @@
 
 import { Navbar } from '@/components/landing/Navbar';
 import { Hero } from '@/components/landing/Hero';
+import { Solutions } from '@/components/landing/Solutions';
 import { AISection } from '@/components/landing/AISection';
 import { Features } from '@/components/landing/Features';
 import { Pricing } from '@/components/landing/Pricing';
@@ -17,6 +18,7 @@ export default function HomePage() {
       </div>
 
       <Hero />
+      <Solutions />
       <AISection />
       <Features />
       <Pricing />

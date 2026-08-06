@@ -30,7 +30,7 @@ export function Footer() {
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">{section.label}</p>
               <div className="space-y-3 text-sm text-slate-300">
                 {section.items.map((item) => (
-                  <Link key={item} href="/" className="block transition hover:text-white">
+                  <Link key={item} href={item === 'Roadmap' ? '/roadmap' : item === 'Contact' ? '#contact' : '/'} className="block transition hover:text-white">
                     {item}
                   </Link>
                 ))}
