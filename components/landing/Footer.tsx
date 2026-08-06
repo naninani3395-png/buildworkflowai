@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const footerLinks = [
-  { label: 'Product', items: ['Features', 'Pricing', 'Roadmap'] },
+  { label: 'Product', items: ['Features', 'Pricing'] },
   { label: 'Company', items: ['About', 'Careers', 'Contact'] },
   { label: 'Support', items: ['Help Center', 'Privacy', 'Terms'] },
 ];
@@ -16,7 +16,7 @@ export function Footer() {
         <div className="space-y-4">
           <div className="flex items-center gap-3 text-white">
             <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white/5">
-              <Image src="/space-design-logo.svg" alt="Space Design Logo" fill className="object-contain p-2" />
+              <Image src="/logo.png" alt="Space Design logo" fill className="object-contain" />
             </div>
             <span className="text-lg font-semibold">Space Design</span>
           </div>
@@ -39,7 +39,7 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <p className="mt-10 text-sm text-slate-500">© 2026 BuildFlow AI. All rights reserved.</p>
+      <p className="mt-10 text-sm text-slate-500">© 2026 Space Design. All rights reserved.</p>
     </footer>
   );
 }

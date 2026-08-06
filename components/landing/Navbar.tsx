@@ -10,7 +10,6 @@ const navItems = [
   { label: 'Solutions', href: '#solutions' },
   { label: 'AI', href: '#ai' },
   { label: 'Pricing', href: '#pricing' },
-  { label: 'Roadmap', href: '/roadmap' },
   { label: 'Resources', href: '#resources' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -20,7 +19,7 @@ export function Navbar() {
     <nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 rounded-full border border-white/10 bg-slate-900/80 px-6 py-4 shadow-soft backdrop-blur transition">
       <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-white">
         <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white/5">
-          <Image src="/space-design-logo.svg" alt="Space Design Logo" fill className="object-contain p-2" />
+          <Image src="/logo.png" alt="Space Design logo" fill className="object-contain" />
         </div>
         Space Design
       </Link>
